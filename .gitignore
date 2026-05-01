@@ -1,0 +1,5 @@
+login-app/
+│── src/
+│── pom.xml
+│── .gitignore   ✅ (ADD HERE)
+│── target/      ❌ (should NOT go to GitHub)
