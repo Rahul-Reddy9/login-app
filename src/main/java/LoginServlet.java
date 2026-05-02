@@ -1,3 +1,5 @@
+package com.login;
+
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
 
@@ -16,14 +18,9 @@ public class LoginServlet extends HttpServlet {
         out.println("<table border='1' align='center' cellpadding='10'>");
 
         if ("admin".equals(username) && "admin123".equals(password)) {
-
             out.println("<tr><th>Status</th><td style='color:green;'>Login Successful</td></tr>");
-            out.println("<tr><th>Username</th><td>" + username + "</td></tr>");
-
         } else {
-
             out.println("<tr><th>Status</th><td style='color:red;'>Invalid Credentials</td></tr>");
-            out.println("<tr><th>Username</th><td>" + username + "</td></tr>");
         }
 
         out.println("</table>");
